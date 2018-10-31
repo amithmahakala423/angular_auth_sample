@@ -12,9 +12,13 @@ app.get('/', function(req, res){
 })
 
 app.get('/api', api)
-
+app.get('/users', api)
+app.get('/events', api)
+app.get('/special', api)
 app.post('/register', api)
 app.post('/login', api)
+
+
 
 app.listen(PORT, function(){
     console.log('Express server running on port' + PORT)
